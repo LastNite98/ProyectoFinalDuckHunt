@@ -14,16 +14,16 @@ public class Shoot : MonoBehaviour, IPointerDownHandler
     [SerializeField] AudioClip shootClip;
     [SerializeField] AudioClip deadClip;
     #endregion
-    #region collider SpriteRenderer
+    #region collider animator 
     private Collider2D collider2d;
-    private SpriteRenderer spriteRenderer;
+    private Animator animator;
     #endregion
     #endregion
 
     private void Awake()
     {
         collider2d = GetComponent<Collider2D>();
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -41,11 +41,11 @@ public class Shoot : MonoBehaviour, IPointerDownHandler
                 }
                 else
                 {
-                    spriteRenderer.enabled = false;
+                    animator.SetTrigger("isDead");
                     collider2d.enabled = false;
                     OnSound?.Invoke();
                     AudioManager.Instance.PlayAudioClip(deadClip);
-                    Destroy(gameObject, .8f);
+                    Destroy(gameObject, 1.1f);
                 }
             }
         }
