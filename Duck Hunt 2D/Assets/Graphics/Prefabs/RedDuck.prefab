@@ -219,3 +219,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifes: 3
+  shootClip: {fileID: 8300000, guid: a38b68669e511194d93fb8958cd1305a, type: 3}
+  deadClip: {fileID: 8300000, guid: 20e55b7fccc1d4a469b6ad54865a64be, type: 3}
