@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -11,6 +10,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] GameObject spawnerObject;
     [SerializeField] GameObject EndPanel;
+    public static Action OnTimesUp;
     #endregion
 
     private void Awake()
@@ -27,6 +27,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
+            OnTimesUp?.Invoke();
             timer = 0;
             GameManager.Instance.SavePunctuation();
             GameManager.Instance.LoadPuntuaction();

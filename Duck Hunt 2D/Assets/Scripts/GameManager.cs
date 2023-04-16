@@ -14,9 +14,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreTxt;
 
-    [SerializeField] private TextMeshProUGUI puntuacionActual;
+    [SerializeField] private TextMeshProUGUI currentScore;
 
-    [SerializeField] private TextMeshProUGUI puntuacionMax;
+    [SerializeField] private TextMeshProUGUI maxScore;
 
     private const string NAME_KEY = "puntuacion";
     private const string MAX_POINT_KEY = "MaxKills";
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     public void LoadPuntuaction()
     {
         string scoreToLoad = PlayerPrefs.GetString(NAME_KEY);
-        puntuacionActual.text = scoreToLoad;
+        currentScore.text = scoreToLoad;
 
     }
 
@@ -70,14 +70,14 @@ public class GameManager : MonoBehaviour
 
     public void CheckMaxScore()
     {
-        int currentMaxKills = PlayerPrefs.GetInt(MAX_POINT_KEY);
+        int currentMaxScore = PlayerPrefs.GetInt(MAX_POINT_KEY);
 
-        if (score > currentMaxKills)
+        if (score > currentMaxScore)
         {
             PlayerPrefs.SetInt(MAX_POINT_KEY, score);
 
         }
-        puntuacionMax.text = currentMaxKills.ToString();
+        maxScore.text = currentMaxScore.ToString();
     }
 
 

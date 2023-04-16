@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 582139261921104052}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 398c265eca093bd428870bb33fa6bc94, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3ceab2e5d92a0f142824e017a89eeb22, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: -7225977798753962150}
   - component: {fileID: 9138639017242777827}
   - component: {fileID: 2723518015011064856}
+  - component: {fileID: -3119723425723335339}
   m_Layer: 6
   m_Name: BlueDuck
   m_TagString: Duck
@@ -192,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointer: {fileID: 7845563652023539175}
-  moveSpeed: 4
+  moveSpeed: 6
   WhatIsWall:
     serializedVersion: 2
     m_Bits: 128
@@ -211,6 +212,18 @@ MonoBehaviour:
   lifes: 2
   shootClip: {fileID: 8300000, guid: a38b68669e511194d93fb8958cd1305a, type: 3}
   deadClip: {fileID: 8300000, guid: 20e55b7fccc1d4a469b6ad54865a64be, type: 3}
+--- !u!114 &-3119723425723335339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582139263729033384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c33e2f3cd562c48ac2ce5615583b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2243413632013870782
 GameObject:
   m_ObjectHideFlags: 0

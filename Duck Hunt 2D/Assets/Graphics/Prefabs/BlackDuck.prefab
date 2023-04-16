@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1141964937870408921}
   - component: {fileID: -378838842685847470}
   - component: {fileID: -350215249331748523}
+  - component: {fileID: -533833718753746157}
   m_Layer: 6
   m_Name: BlackDuck
   m_TagString: Duck
@@ -87,7 +88,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointer: {fileID: 8624811297356646661}
-  moveSpeed: 3
+  moveSpeed: 4
   WhatIsWall:
     serializedVersion: 2
     m_Bits: 128
@@ -106,6 +107,18 @@ MonoBehaviour:
   lifes: 1
   shootClip: {fileID: 8300000, guid: a38b68669e511194d93fb8958cd1305a, type: 3}
   deadClip: {fileID: 8300000, guid: 20e55b7fccc1d4a469b6ad54865a64be, type: 3}
+--- !u!114 &-533833718753746157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557116693968723332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c33e2f3cd562c48ac2ce5615583b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1557116695366856088
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1557116695366856091}
   - component: {fileID: 1557116695366856090}
+  - component: {fileID: 1325160678520942182}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -190,6 +204,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1325160678520942182
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557116695366856088}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 22868efb34c5d5a4491d07a5bb67f21c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8261670235927280213
 GameObject:
   m_ObjectHideFlags: 0

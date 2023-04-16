@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4903159773496802973}
   - component: {fileID: 4903159773496802972}
+  - component: {fileID: 2492209254405223943}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -115,6 +116,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2492209254405223943
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4903159773496802974}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1411f4a86a96564ba8d89c5496ddde7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4903159775451090562
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,6 +149,7 @@ GameObject:
   - component: {fileID: 1070981195090237738}
   - component: {fileID: -1590653354742817313}
   - component: {fileID: 5606929229120422375}
+  - component: {fileID: -3222141133781014769}
   m_Layer: 6
   m_Name: RedDuck
   m_TagString: Duck
@@ -202,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointer: {fileID: 1828970322558506348}
-  moveSpeed: 5
+  moveSpeed: 9
   WhatIsWall:
     serializedVersion: 2
     m_Bits: 128
@@ -221,3 +243,15 @@ MonoBehaviour:
   lifes: 3
   shootClip: {fileID: 8300000, guid: a38b68669e511194d93fb8958cd1305a, type: 3}
   deadClip: {fileID: 8300000, guid: 20e55b7fccc1d4a469b6ad54865a64be, type: 3}
+--- !u!114 &-3222141133781014769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4903159775451090562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c33e2f3cd562c48ac2ce5615583b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
